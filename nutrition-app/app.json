@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "Nutrition Tracker",
+    "slug": "nutrition-tracker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to scan food barcodes for nutrition tracking."
+      }
+    },
+    "android": {
+      "permissions": [
+        "android.permission.CAMERA"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera to scan food barcodes."
+        }
+      ],
+      [
+        "expo-barcode-scanner",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera to scan food barcodes."
+        }
+      ]
+    ]
+  }
+}

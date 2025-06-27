@@ -1,0 +1,14 @@
+type Guest {
+    id: ID!
+    name: String!
+    message: String!
+    createdAt: String!
+}
+
+type Query {
+    getGuests: [Guest!]!
+}
+
+type Mutation {
+    addGuest(name: String!, message: String!): Guest!
+}
