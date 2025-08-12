@@ -33,7 +33,10 @@ export default function FoodSearchScreen({ navigation }) {
         <Text style={styles.foodDetails}>
           {item.calories} cal/100g | Protein: {item.protein}g | Carbs: {item.carbs}g
         </Text>
-        {item.brand && <Text style={styles.brandText}>{item.brand}</Text>}
+        <View style={styles.metaRow}>
+          {item.brand && <Text style={styles.brandText}>{item.brand}</Text>}
+          {item.source && <Text style={styles.sourceText}>{item.source}</Text>}
+        </View>
       </View>
     </TouchableOpacity>
   );
@@ -102,7 +105,9 @@ const styles = StyleSheet.create({
   },
   foodInfo: { flex: 1 },
   foodName: { fontSize: 16, fontWeight: 'bold', marginBottom: 5 },
-  foodDetails: { fontSize: 14, color: '#666', marginBottom: 3 },
+  foodDetails: { fontSize: 14, color: '#666', marginBottom: 5 },
+  metaRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
   brandText: { fontSize: 12, color: '#999', fontStyle: 'italic' },
+  sourceText: { fontSize: 10, color: '#007AFF', backgroundColor: '#E3F2FD', paddingHorizontal: 6, paddingVertical: 2, borderRadius: 4 },
   emptyText: { textAlign: 'center', fontSize: 16, color: '#666', marginTop: 50 }
 });
