@@ -2,6 +2,10 @@
 
 A comprehensive React Native/Expo nutrition tracking application with barcode scanning and mineral optimization, specifically designed for New Zealand and Australian food products.
 
+I didn't want to pay for an app and only wanted to use this for my own personal use. I find that I don't use all options on the fitness and nutrition apps out there. 
+
+May transfer to Android Studio in the near future to break down dependencies with Expo which, at times, can be a bit broken for testing purposes.
+
 ## 🌟 Features
 
 ### Core Functionality
